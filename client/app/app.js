@@ -8,5 +8,9 @@ angular.module('realEstate', ['ui.router'])
       templateUrl: 'templates/home.html',
       controller: 'HomeController',
       url: '/home'
-    });
+    }).state('detail', {
+      templateUrl: 'templates/detail.html',
+      controller: 'DetailController',
+      url: '/home/:id'
+    })
   });

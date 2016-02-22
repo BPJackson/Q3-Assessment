@@ -1,5 +1,5 @@
 <div class="row">
-  <div ng-repeat="home in homes" class="col-sm-6 col-md-4">
+  <div ng-repeat="home in homes" class="col-sm-6 col-md-4" ui-sref="detail({id: home.id})">
     <div class="thumbnail">
       <img ng-src="{{home.photoURL}}" alt="{{home.address}}">
       <div class="caption">
